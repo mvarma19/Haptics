@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffa199"
+    tools:context=".QualAns">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:accessibilityTraversalBefore="@id/mental"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Qualitative Feedback"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".05" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".05" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline24"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".70" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".90" />
+
+    <TextView
+        android:id="@+id/accessibility"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:accessibilityTraversalAfter="@+id/mental"
+        android:gravity="center"
+        android:text="Please list any thoughts you have about the accessibilitiy of using this vibration PIN entry method"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+
+
+    <TextView
+        android:id="@+id/usability"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Please list any thoughts you have about the usability of this vibration PIN entry method"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline24" />
+
+
+
+
+    <TextView
+        android:id="@+id/external"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:text="Please list any external factors that affected or influenced how you completed the task"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+    <TextView
+        android:id="@+id/othertv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:text="Do you have any other comments?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline14"  />
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#000000"
+        android:fontFamily="@font/oswald"
+        android:background="@color/colorPrimary"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+    <EditText
+        android:id="@+id/q1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:accessibilityTraversalAfter="@id/q2"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Please list any thoughts you have about the accessibilitiy of using this vibration PIN entry method"
+        android:imeOptions="actionNext"
+        android:keyboardNavigationCluster="false"
+        android:nestedScrollingEnabled="false"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline24"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/accessibility" />
+
+    <EditText
+        android:id="@+id/q2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:accessibilityTraversalBefore="@id/q3"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Please list any thoughts you have about the accessibilitiy of using this vibration PIN entry method"
+        android:imeOptions="actionNext"
+        android:importantForAccessibility="yes"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline9"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/usability" />
+
+    <EditText
+        android:id="@+id/q3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:accessibilityTraversalBefore="@id/q4"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Please list any external factors that affected or influenced how you completed the task"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline14"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/external" />
+
+    <EditText
+        android:id="@+id/q4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:accessibilityTraversalBefore="@id/submit"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Do you have any other comments?"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/othertv" />
+</androidx.constraintlayout.widget.ConstraintLayout>

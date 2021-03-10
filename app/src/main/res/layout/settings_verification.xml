@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fedcad"
+    tools:context=".mainscreen">
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mButtonSpeak"-->
+    <!--        android:layout_width="327dp"-->
+    <!--        android:layout_height="55dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_centerVertical="true"-->
+    <!--        android:background="@color/purple"-->
+    <!--        android:fontFamily="@font/oswald"-->
+    <!--        android:text="Speak"-->
+    <!--        android:textSize="24dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/buttonMainTutorial2"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/uname2"-->
+    <!--        app:layout_constraintVertical_bias="0.082" />-->
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="324dp"
+        android:background="#7b2e00"
+        android:text="Continue with studies"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline95"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinev90"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev10"
+        app:layout_constraintTop_toTopOf="@+id/guideline23"
+        app:layout_constraintVertical_bias="0.228" />
+
+    <Button
+        android:id="@+id/change_settings"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="264dp"
+        android:background="#7b2e00"
+        android:text="Change the settings"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline85"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinev90"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev10"
+        app:layout_constraintTop_toTopOf="@+id/guideline23"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="62dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_preferences" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="0dp"
+        android:layout_height="97dp"
+        android:accessibilityLiveRegion="polite"
+        android:gravity="center"
+        android:importantForAccessibility="yes"
+        android:text="Would you like to \nchange your settings?"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinev90"
+        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Current Settings are:"
+        android:textSize="30dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/guideline45"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinev90"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev10"
+        app:layout_constraintTop_toTopOf="@+id/guideline23" />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinev90"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev10"
+        app:layout_constraintTop_toBottomOf="@+id/current"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/interval"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelinev90"
+        app:layout_constraintStart_toStartOf="@+id/guidelinev10"
+        app:layout_constraintTop_toBottomOf="@+id/duration" />
+
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev90"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline45"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".25" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline55"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline65"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline75"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline85"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".85" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline95"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".95" />
+
+
+    <!--    <CheckBox-->
+    <!--        android:id="@+id/accessibility"-->
+    <!--        android:layout_width="330dp"-->
+    <!--        android:layout_height="36dp"-->
+    <!--        android:layout_marginBottom="4dp"-->
+    <!--        android:checked="false"-->
+    <!--        android:fontFamily="@font/oswald"-->
+    <!--        android:text="Accessibility Features"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.987"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/guideline50" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

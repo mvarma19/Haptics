@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_3"
+    tools:context=".information">
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="384dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="96dp"
+        android:background="#41B3A3"
+        android:fontFamily="@font/oswald"
+        android:text="HOME"
+        app:layout_constraintBottom_toTopOf="@+id/home"
+        app:layout_constraintEnd_toStartOf="@+id/guideline27"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toTopOf="@+id/guideline31"
+        app:layout_constraintVertical_bias="0.585" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="383dp"
+        android:layout_height="38dp"
+        android:background="#41B3A3"
+        android:fontFamily="@font/oswald"
+        android:gravity="center_horizontal"
+        android:text="Information about ESM Studies"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline27"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toTopOf="@+id/guideline1"
+        app:layout_constraintVertical_bias="0.971" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="382dp"
+        android:layout_height="29dp"
+        android:background="#41B3A3"
+        android:fontFamily="@font/oswald"
+        android:gravity="center_horizontal"
+        android:text="STUDY APPROVED BY INSTITUTIONAL REVIEW BOARD-RIT "
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline27"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="382dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="4dp"
+        android:background="#41B3A3"
+        android:fontFamily="@font/oswald"
+        android:gravity="center_horizontal"
+        android:text="STUDY DURATION: 7 DAYS "
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline27"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="385dp"
+        android:layout_height="45dp"
+        android:background="#41B3A3"
+        android:fontFamily="@font/oswald"
+        android:gravity="center_horizontal"
+        android:text="USER WILL RECIEVE A NOTIFICATION
+EVERYDAY ON 3 DIFFERENT INTERVALS THROUGHOUT ON THEIR WORKDAY "
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline27"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toTopOf="@+id/guideline29"
+        app:layout_constraintVertical_bias="0.774"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="385dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:background="#41B3A3"
+        android:fontFamily="@font/oswald"
+        android:gravity="center_horizontal"
+        android:text="1.USER RECEIVES THREE NOTIFICATIONS ON A SINGLE DAY "
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline27"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toTopOf="@+id/guideline7"
+        app:layout_constraintVertical_bias="0.25"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="385dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:background="#41B3A3"
+        android:fontFamily="@font/oswald"
+        android:gravity="center_horizontal"
+        android:text="2.OPEN THE NOTIFICATION "
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline32"
+        app:layout_constraintEnd_toStartOf="@+id/guideline27"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:layout_constraintVertical_bias="0.128"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_width="385dp"
+        android:layout_height="24dp"
+        android:background="#41B3A3"
+        android:fontFamily="@font/oswald"
+        android:gravity="center_horizontal"
+        android:text="4.ANSWER THE QUESTIONNAIRE "
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/next"
+        app:layout_constraintEnd_toStartOf="@+id/guideline27"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toBottomOf="@+id/tv8"
+        app:layout_constraintVertical_bias="0.666"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv8"
+        android:layout_width="385dp"
+        android:layout_height="33dp"
+        android:background="#41B3A3"
+        android:fontFamily="@font/oswald"
+        android:gravity="center_horizontal"
+        android:text="3.PERFORM THE LOGIN TASKS "
+        android:textColor="#000000"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline31"
+        app:layout_constraintEnd_toStartOf="@+id/guideline27"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.19" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.41" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.46" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="401dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="162dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="515dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="393dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    tools:context=".mainscreen">
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mButtonSpeak"-->
+    <!--        android:layout_width="327dp"-->
+    <!--        android:layout_height="55dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_centerVertical="true"-->
+    <!--        android:background="@color/purple"-->
+    <!--        android:fontFamily="@font/oswald"-->
+    <!--        android:text="Speak"-->
+    <!--        android:textSize="24dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/buttonMainTutorial2"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/uname2"-->
+    <!--        app:layout_constraintVertical_bias="0.082" />-->
+
+    <Button
+        android:id="@+id/buttonMainEvaluation2"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+
+        android:background="#827b00"
+        android:text="Perform ESM Studies "
+        android:textColor="#f8f8f4"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline75"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline65" />
+
+    <Button
+        android:id="@+id/buttonSendData"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#827b00"
+
+
+        android:text="Send Data"
+        android:textColor="#f8f8f4"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline95"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline85" />
+
+    <Button
+        android:id="@+id/buttonMainTutorial2"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#827b00"
+
+        android:text="SETTINGS"
+        android:textColor="#f8f8f4"
+
+
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline55"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline45" />
+
+    <Button
+        android:id="@+id/buttonMainLoginScreen2"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:background="#827b00"
+        android:text="Information about ESM studies"
+        android:textColor="#f8f8f4"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline85"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline75" />
+
+    <Button
+        android:id="@+id/practice"
+        android:layout_width="327dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:background="#827b00"
+        android:text="practice"
+        android:textColor="#f8f8f4"
+
+        android:textSize="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline65"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline55" />
+
+    <EditText
+
+
+        android:id="@+id/uname2"
+
+        android:layout_width="352dp"
+        android:layout_height="70dp"
+        android:accessibilityTraversalAfter="@id/buttonMainTutorial2"
+        android:backgroundTint="@android:color/background_dark"
+        android:editable="false"
+        android:gravity="center"
+        android:hint="Please enter your code"
+        android:inputType="none"
+
+        android:textColor="#ffffff"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline25"
+         />
+
+    <TextView
+        android:id="@+id/tvParticipant2"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:accessibilityLiveRegion="polite"
+        android:background="#374449"
+        android:gravity="center"
+        android:importantForAccessibility="yes"
+        android:text="Participant Code:"
+        android:textColor="#ebecec"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:accessibilityLiveRegion="polite"
+        android:background="#374449"
+        android:gravity="center"
+        android:importantForAccessibility="yes"
+        android:text="Home Page"
+        android:textColor="#ebecec"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvParticipant2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline25"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".25" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline35"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".45" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline45"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".45" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline55"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline65"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline75"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline85"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".85" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline95"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".95" />
+    <!--    <CheckBox-->
+    <!--        android:id="@+id/accessibility"-->
+    <!--        android:layout_width="330dp"-->
+    <!--        android:layout_height="36dp"-->
+    <!--        android:layout_marginBottom="4dp"-->
+    <!--        android:checked="false"-->
+    <!--        android:fontFamily="@font/oswald"-->
+    <!--        android:text="Accessibility Features"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.987"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/guideline50" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebbbaa"
+    tools:context=".homepage">
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mButtonSpeak"-->
+    <!--        android:layout_width="327dp"-->
+    <!--        android:layout_height="55dp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_centerVertical="true"-->
+    <!--        android:background="@color/purple"-->
+    <!--        android:fontFamily="@font/oswald"-->
+    <!--        android:text="Speak"-->
+    <!--        android:textSize="24dp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/buttonMainTutorial2"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/uname2"-->
+    <!--        app:layout_constraintVertical_bias="0.082" />-->
+
+    <TextView
+        android:id="@+id/tvParticipant2"
+        android:layout_width="406dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="104dp"
+        android:accessibilityLiveRegion="polite"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="Welcome to Haptic Authentication"
+        android:textColor="#000000"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline35"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="532dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="27dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="439dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="184dp"
+        android:layout_height="269dp"
+        android:importantForAccessibility="yes"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/guideline36"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/homepage" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="182dp"
+        android:layout_height="82dp"
+        android:background="@drawable/gradient_2"
+        android:fontFamily="@font/oswald"
+        android:text="CONTINUE"
+        android:textSize="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline35" />
+
+    <!--    <CheckBox-->
+    <!--        android:id="@+id/accessibility"-->
+    <!--        android:layout_width="330dp"-->
+    <!--        android:layout_height="36dp"-->
+    <!--        android:layout_marginBottom="4dp"-->
+    <!--        android:checked="false"-->
+    <!--        android:fontFamily="@font/oswald"-->
+    <!--        android:text="Accessibility Features"-->
+    <!--        android:textColor="#000000"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.987"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/guideline50" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

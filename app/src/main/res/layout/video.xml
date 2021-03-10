@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffa199"
+    tools:context=".Video">
+
+
+    <Button
+        android:id="@+id/tvb"
+        android:layout_width="243dp"
+        android:layout_height="174dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+
+        android:background="#ffd099"
+        android:fontFamily="@font/oswald"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Hold and release to enter PIN"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/input"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/change_button"
+        android:layout_width="134dp"
+        android:layout_height="50dp"
+        android:background="#ffd099"
+        android:fontFamily="@font/oswald"
+        android:text="Change"
+        android:textAlignment="center"
+
+        android:textSize="30dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/interval"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/interval"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="193dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+
+        android:background="#ffd099"
+        android:fontFamily="@font/oswald"
+        android:text="Continue"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline12"
+        app:layout_constraintVertical_bias="0.3" />
+
+
+    <TextView
+        android:id="@+id/testpw"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/input"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/interval"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="245dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald"
+        android:gravity="center"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <TextView
+        android:id="@+id/interval"
+        android:layout_width="245dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/oswald"
+        android:gravity="center"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/duration" />
+
+    <TextView
+        android:id="@+id/del"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:background="#ffd099"
+        android:fontFamily="@font/oswald"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="DELETE"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline11"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/clr"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="12dp"
+        android:background="#ffd099"
+        android:fontFamily="@font/oswald"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="CLEAR"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline11"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/oswald"
+        android:gravity="center"
+        android:hint="Enter the PIN"
+        android:inputType="numberPassword"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/interval" />
+
+    <TextView
+        android:id="@+id/tvtrial"
+        android:layout_width="99dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text=""
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toBottomOf="@+id/continue_button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/DiaryStudy"
+        android:layout_width="376dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/oswald"
+        android:gravity="center"
+        android:text="Welcome to Login Method"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/duration"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintHorizontal_bias="0.622"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvcondition"
+        android:layout_width="99dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="20dp"
+
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:text=""
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toStartOf="@+id/tvtrial"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/continue_button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="18dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="49dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="437dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="437dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="705dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
