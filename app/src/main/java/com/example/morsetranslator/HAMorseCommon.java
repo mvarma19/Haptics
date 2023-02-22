@@ -97,7 +97,7 @@ public class HAMorseCommon {
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
         // set the type to 'email'
         emailIntent.setType("vnd.android.cursor.dir/email");
-        String to[] = {"roshan82@gmail.com","mk2568@rit.edu"};
+        String to[] = {"roshan82@gmail.com"};
         //String to[] = {"roshan82@gmail.com","embodiedroshan@gmail.com"};
         emailIntent.putExtra(Intent.EXTRA_EMAIL, to);
         // the attachment
